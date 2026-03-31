@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.SimpleCalculator" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@color/bg_dark</item>
+        <item name="android:statusBarColor">@color/bg_dark</item>
+        <item name="android:navigationBarColor">@color/bg_dark</item>
+    </style>
+
+    <style name="BaseButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginEnd">10dp</item>
+        <item name="android:textSize">26sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+
+    <style name="NumButton" parent="BaseButton">
+        <item name="android:backgroundTint">@color/btn_num</item>
+        <item name="android:textColor">@color/text_white</item>
+    </style>
+
+    <style name="OpButton" parent="BaseButton">
+        <item name="android:backgroundTint">@color/btn_op</item>
+        <item name="android:textColor">@color/text_white</item>
+    </style>
+
+    <style name="FuncButton" parent="BaseButton">
+        <item name="android:backgroundTint">@color/btn_func</item>
+        <item name="android:textColor">@color/text_white</item>
+    </style>
+
+</resources>
